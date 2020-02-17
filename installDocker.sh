@@ -8,7 +8,8 @@ sudo chmod +x /usr/bin/docker-compose
 ## The following command are for docker command shortcuts
 cd ~
 cp .bashrc .bashrc.bac
-echo "\n# Docker Command Shorcuts\n"  >> .bashrc
+echo ""  >> .bashrc
+echo "# Docker Command Shorcuts"  >> .bashrc
 echo "alias dc='docker container'"  >> .bashrc
 echo "alias di='docker image'"  >> .bashrc
 echo "alias d='docker'"  >> .bashrc
