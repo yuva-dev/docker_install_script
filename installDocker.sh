@@ -4,3 +4,11 @@ sudo usermod -aG docker $USER
 sudo curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo chmod +x /usr/bin/docker-compose
+
+## The following command are for docker command shortcuts
+cd ~
+cp .bashrc .bashrc.bac
+echo "\n# Docker Command Shorcuts\n"  >> .bashrc
+echo "alias dc='docker container'"  >> .bashrc
+echo "alias di='docker image'"  >> .bashrc
+echo "alias d='docker'"  >> .bashrc
